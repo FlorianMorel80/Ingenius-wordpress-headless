@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/ingenius-create-block",
+  "version": "0.1.0",
+  "title": "Ingenius Create Block",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Ingenius block for hero bannier",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "keywords": [
+    "kpi-hero"
+  ],
+  "textdomain": "ingenius-create-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "attributes": {
+    "content": {
+      "type": "string",
+      "source": "html",
+      "selector": "p"
+    },
+    "align": {
+      "type": "string",
+      "default": "none"
+    }
+  }
+}
